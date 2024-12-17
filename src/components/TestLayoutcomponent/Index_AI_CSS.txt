@@ -1,0 +1,63 @@
+Style (CSS Module - SampleStamp.module.css) Code:
+
+```css
+.sample-stamp {
+  display: inline-block;
+  position: relative;  
+}
+
+.sample-stamp-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #FF0000; /* Red border */
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Space elements evenly */
+  overflow: hidden; /* Hide overflowing stars */
+}
+
+.sample-stamp-text-top,
+.sample-stamp-text-bottom {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FF0000; /* Red text */
+}
+
+.sample-stamp-text-middle {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FF0000; /* Red text */
+  text-transform: uppercase;
+}
+
+
+.sample-stamp-stars {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute; /* Absolute positioning for stars */
+}
+.top {
+  top: 10px; /* Adjust as needed */
+
+}
+.bottom {
+  bottom: 10px; /* Adjust as needed */
+
+}
+
+.star {
+  color: #FF0000; /* Red stars */
+  font-size: 12px;
+}
+
+
+```
+
+
+
+Remember to adjust sizes, colors, and font styles as needed to match the original image precisely.  The provided CSS uses a CSS Module (`.module.css`), which helps prevent naming conflicts in larger projects.  If you're not using CSS modules, you will need to adapt the selectors appropriately.
