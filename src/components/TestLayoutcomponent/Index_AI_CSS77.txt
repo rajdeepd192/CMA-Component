@@ -1,0 +1,93 @@
+ ... other input fields similarly */}
+       <div>
+        <label htmlFor="city">City*</label>
+        <input
+          type="text"
+          id="city"
+          name="city"
+          value={formData.city}
+          onChange={handleChange}
+          required
+        />
+      </div>
+      <div>
+        <label htmlFor="state">State*</label>
+        <select
+          id="state"
+          name="state"
+          value={formData.state}
+          onChange={handleChange}
+          required
+        >
+          <option value="Maryland">Maryland</option>
+          {/* ...other state options */}
+        </select>
+      </div>
+        <div>
+        <label htmlFor="zipCode">ZIP code*</label>
+        <input
+          type="text"
+          id="zipCode"
+          name="zipCode"
+          value={formData.zipCode}
+          onChange={handleChange}
+          required
+        />
+      </div>
+
+
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default AddressForm;
+
+```
+
+
+*JSON Data:
+
+```json
+{
+  "firstName": "",
+  "lastName": "",
+  "streetAddress": "",
+  "aptSuite": "",
+  "city": "Mount Rainier",
+  "state": "Maryland",
+  "zipCode": "20712",
+  "phoneNumber": "",
+  "email": ""
+}
+
+```
+
+
+*Style (CSS/SCSS):
+
+```typescript jsx
+import styled from 'styled-components';
+
+const FormContainer = styled.form`
+   display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Spacing between elements */
+
+`;
+
+// Example of styling an individual input field
+
+const StyledInput = styled.input`
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+`;
+
+//  Usage within component
+//   <StyledInput type="text" id="firstName" .../>
+
+```
+
+
+This code provides a functional React form with controlled inputs and default values as shown in the image. You can adapt it to fit your specific Pega integration needs.  Remember to add input validation and other required functionalities.  For dropdowns (state), you will likely need to fetch the state options from an external source or define them in your component.
