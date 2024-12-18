@@ -1,0 +1,39 @@
+JSON Data:
+
+```json
+[
+  {
+    "caseId": "HL-102",
+    "customerName": "Daniel Ricciardo",
+    "loanPurpose": "Travel",
+    "currentTask": "Applicant Details",
+    "city": "Auckland",
+    "applicationStatus": "PAST DEADLINE",
+    "dueDate": "23/04/2024",
+    "priority": 100
+  },
+  {
+    "caseId": "HL-14",
+    "customerName": "Lewis Hamilton",
+    "loanPurpose": "Home Renovation",
+    "currentTask": "Applicant Details",
+    "city": "Auckland",
+    "applicationStatus": "PAST DEADLINE",
+    "dueDate": "23/04/2024",
+    "priority": 100
+  },
+  {
+    "caseId": "HL-56",
+    "customerName": "Sergio Perez",
+    "loanPurpose": "Restructure Existing Loans",
+    "currentTask": "Applicant Details",
+    "city": "Auckland",
+    "applicationStatus": "PAST DEADLINE",
+    "dueDate": "23/04/2024",
+    "priority": 100
+  },
+    // ... (rest of the data)
+]
+
+```
+
