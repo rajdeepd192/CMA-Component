@@ -1,0 +1,40 @@
+
+
+```jsx
+import React, { useState } from 'react';
+
+interface FormData {
+  firstName: string;
+  lastName: string;
+  streetAddress: string;
+  aptSuite: string;
+  city: string;
+  state: string;
+  zipCode: string;
+  phoneNumber: string;
+  emailAddress: string;
+}
+
+const AddressForm: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    firstName: '',
+    lastName: '',
+    streetAddress: '',
+    aptSuite: '',
+    city: 'Mount Rainier', // Default city value
+    state: 'Maryland', // Default state value
+    zipCode: '20712', // Default zip code value
+    phoneNumber: '',
+    emailAddress: '',
+  });
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  return (
+    <div>
+      <p>Required field 
