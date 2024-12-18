@@ -1,0 +1,22 @@
+Style (CSS) code:
+
+```css
+div {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  gap: 10px;         /* Spacing between items */
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+```
+
+This setup includes a TypeScript interface for type safety and better maintainability. Remember that in a Pega environment, you'd typically integrate this with the Pega platform using specific APIs and directives, but this provides the basic component structure.
